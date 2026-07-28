@@ -1,0 +1,7 @@
+services:
+  data-pipeline:
+    build: .
+    container_name: data-pipeline
+    volumes:
+      - .:/app
+    command: python prepare_data.py
